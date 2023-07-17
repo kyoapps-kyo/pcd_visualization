@@ -7,7 +7,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1397</width>
+    <width>1104</width>
     <height>891</height>
    </rect>
   </property>
@@ -974,7 +974,7 @@ Button */
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="styleSheet">
-                   <string notr="true">background-image: url(:/icons/images/icons/cil-file.png);</string>
+                   <string notr="true">background-image: url(:/icons/images/icons/cil-3d.png);</string>
                   </property>
                   <property name="text">
                    <string>New</string>
@@ -2759,6 +2759,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
                                <verstretch>0</verstretch>
                               </sizepolicy>
                              </property>
+                             <property name="styleSheet">
+                              <string notr="true">border: 1px solid #fff;</string>
+                             </property>
                             </widget>
                            </item>
                           </layout>
@@ -2767,8 +2770,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
                           <layout class="QHBoxLayout" name="horizontalLayout_7">
                            <item>
                             <widget class="QLabel" name="image_display">
+                             <property name="styleSheet">
+                              <string notr="true">border: 1px solid #fff;</string>
+                             </property>
                              <property name="text">
-                              <string>img</string>
+                              <string>rendering images</string>
                              </property>
                             </widget>
                            </item>
@@ -2793,28 +2799,44 @@ li.checked::marker { content: &quot;\2612&quot;; }
                            <item row="0" column="0">
                             <widget class="QPushButton" name="pushButton_start">
                              <property name="text">
-                              <string>s</string>
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="resources.qrc">
+                               <normaloff>:/icons/images/icons/cil-media-play.png</normaloff>:/icons/images/icons/cil-media-play.png</iconset>
                              </property>
                             </widget>
                            </item>
                            <item row="1" column="0">
                             <widget class="QPushButton" name="pushButton_prev">
                              <property name="text">
-                              <string>pr</string>
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="resources.qrc">
+                               <normaloff>:/icons/images/icons/cil-chevron-left.png</normaloff>:/icons/images/icons/cil-chevron-left.png</iconset>
                              </property>
                             </widget>
                            </item>
                            <item row="1" column="1">
                             <widget class="QPushButton" name="pushButton_next">
                              <property name="text">
-                              <string>next</string>
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="resources.qrc">
+                               <normaloff>:/icons/images/icons/cil-chevron-right.png</normaloff>:/icons/images/icons/cil-chevron-right.png</iconset>
                              </property>
                             </widget>
                            </item>
                            <item row="0" column="1">
                             <widget class="QPushButton" name="pushButton_pause">
                              <property name="text">
-                              <string>pa</string>
+                              <string/>
+                             </property>
+                             <property name="icon">
+                              <iconset resource="resources.qrc">
+                               <normaloff>:/icons/images/icons/cil-media-pause.png</normaloff>:/icons/images/icons/cil-media-pause.png</iconset>
                              </property>
                             </widget>
                            </item>

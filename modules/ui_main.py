@@ -30,7 +30,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1397, 891)
+        MainWindow.resize(1104, 891)
         MainWindow.setMinimumSize(QSize(940, 560))
         self.styleSheet = QWidget(MainWindow)
         self.styleSheet.setObjectName(u"styleSheet")
@@ -707,7 +707,7 @@ class Ui_MainWindow(object):
         self.btn_bev.setFont(font)
         self.btn_bev.setCursor(QCursor(Qt.PointingHandCursor))
         self.btn_bev.setLayoutDirection(Qt.LeftToRight)
-        self.btn_bev.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-file.png);")
+        self.btn_bev.setStyleSheet(u"background-image: url(:/icons/images/icons/cil-3d.png);")
 
         self.verticalLayout_8.addWidget(self.btn_bev)
 
@@ -1414,6 +1414,7 @@ class Ui_MainWindow(object):
         self.openGLWidget_visualization_box.setObjectName(u"openGLWidget_visualization_box")
         sizePolicy3.setHeightForWidth(self.openGLWidget_visualization_box.sizePolicy().hasHeightForWidth())
         self.openGLWidget_visualization_box.setSizePolicy(sizePolicy3)
+        self.openGLWidget_visualization_box.setStyleSheet(u"border: 1px solid #fff;")
 
         self.verticalLayout_22.addWidget(self.openGLWidget_visualization_box)
 
@@ -1424,6 +1425,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.image_display = QLabel(self.page_bev)
         self.image_display.setObjectName(u"image_display")
+        self.image_display.setStyleSheet(u"border: 1px solid #fff;")
 
         self.horizontalLayout_7.addWidget(self.image_display)
 
@@ -1449,21 +1451,33 @@ class Ui_MainWindow(object):
         self.gridLayout_5.setObjectName(u"gridLayout_5")
         self.pushButton_start = QPushButton(self.page_bev)
         self.pushButton_start.setObjectName(u"pushButton_start")
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/images/icons/cil-media-play.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_start.setIcon(icon6)
 
         self.gridLayout_5.addWidget(self.pushButton_start, 0, 0, 1, 1)
 
         self.pushButton_prev = QPushButton(self.page_bev)
         self.pushButton_prev.setObjectName(u"pushButton_prev")
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/images/icons/cil-chevron-left.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_prev.setIcon(icon7)
 
         self.gridLayout_5.addWidget(self.pushButton_prev, 1, 0, 1, 1)
 
         self.pushButton_next = QPushButton(self.page_bev)
         self.pushButton_next.setObjectName(u"pushButton_next")
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/images/icons/cil-chevron-right.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_next.setIcon(icon8)
 
         self.gridLayout_5.addWidget(self.pushButton_next, 1, 1, 1, 1)
 
         self.pushButton_pause = QPushButton(self.page_bev)
         self.pushButton_pause.setObjectName(u"pushButton_pause")
+        icon9 = QIcon()
+        icon9.addFile(u":/icons/images/icons/cil-media-pause.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_pause.setIcon(icon9)
 
         self.gridLayout_5.addWidget(self.pushButton_pause, 0, 1, 1, 1)
 
@@ -1791,11 +1805,11 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem23.setText(QCoreApplication.translate("MainWindow", u"Line", None));
         self.tableWidget.setSortingEnabled(__sortingEnabled)
 
-        self.image_display.setText(QCoreApplication.translate("MainWindow", u"img", None))
-        self.pushButton_start.setText(QCoreApplication.translate("MainWindow", u"s", None))
-        self.pushButton_prev.setText(QCoreApplication.translate("MainWindow", u"pr", None))
-        self.pushButton_next.setText(QCoreApplication.translate("MainWindow", u"next", None))
-        self.pushButton_pause.setText(QCoreApplication.translate("MainWindow", u"pa", None))
+        self.image_display.setText(QCoreApplication.translate("MainWindow", u"rendering images", None))
+        self.pushButton_start.setText("")
+        self.pushButton_prev.setText("")
+        self.pushButton_next.setText("")
+        self.pushButton_pause.setText("")
         self.checkBox_2.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
         self.checkBox_3.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
         self.checkBox_4.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
