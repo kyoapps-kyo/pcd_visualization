@@ -62,7 +62,8 @@ class MyMainWindow(QWidget):
 
         # 渲染点云
         # self.show_pointcloud()
-        self.box_item = gl.GLScatterPlotItem(pos=np.array([10, 10, 10]),
+        self.box_item = gl.GLScatterPlotItem(pos=np.array([1, -1, 1]),
+                                             color=(1, 0, 0, 1),
                                              size=5,
                                              pxMode=False)
         self.og_widget.addItem(self.box_item)
